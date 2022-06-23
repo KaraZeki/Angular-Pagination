@@ -1,0 +1,21 @@
+.paginationUI{
+  justify-content:center;
+}
+.mainImg{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.imgClass{
+  width: 65%;
+  margin-left: 15%;
+  max-height: 750px;
+}
+.txtClass{
+  width: 65%;
+  height: 75%;
+  margin-left: 15%;
+  color:white;
+  font-style: initial;
+  box-shadow:1px;
+}
