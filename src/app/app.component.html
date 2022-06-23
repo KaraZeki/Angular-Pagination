@@ -6,10 +6,10 @@
           <span aria-hidden="true">&laquo;</span>
         </a>
       </li>
-      <li class="page-item " [ngClass]="{disabled:0===currentPage}">
+      <li class="page-item "  [ngClass]="{disabled:0===currentPage}">
         <span class="page-link" (click)="currentPage=currentPage-1">Önceki</span>
       </li>
-      <ng-container *ngFor="let item of images; let i=index">
+      <ng-container  *ngFor="let item of images; let i=index">
         <li class="page-item" [ngClass]="{active:i===currentPage}" *ngIf="PageIndex(i)">
           <a class="page-link" (click)="currentPage=i" value="{i+1}">{{i+1}}</a>
         </li>
@@ -28,9 +28,9 @@
   </nav>
 </div>
 <div class="mainImg">
-  <h4 class="txtClass">{{images[currentPage].title}}</h4>
+  <h4 appFirst [backgroundColor]="'purple'" class="txtClass">{{images[currentPage].title}}</h4>
   <div>
-    <img class="imgClass" src="{{images[currentPage].url}}">
+    <img  class="imgClass" src="{{images[currentPage].url}}">
   </div>
 
 </div>
